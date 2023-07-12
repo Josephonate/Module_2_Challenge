@@ -5,8 +5,9 @@
     
 }
 
+
 body{
-    background-color: #d9dcd6;
+    background-image: url("brainscope_6.jpg");
 }
 
 header {
@@ -38,13 +39,19 @@ ul li {
     margin-left: 25px;
 }
 a {
+
     color: #ffffff;
 }
 
+h2{
+    padding: 30px;
+    margin-bottom: 20px;
+}
 .border{
     border-right: 5px solid black;
-    /* padding: 30px; */
-    justify-content: left;
+    margin-left: 70px;
+    padding: 30px;
+    
 }
 
 p {
@@ -55,35 +62,36 @@ p {
     flex-wrap:wrap ;
     justify-content: right;
 }
+article{
+    float: right;
+}
 
 article img{
     padding: 50px;
     float: right;
+    flex-direction: column;
     justify-content: right;
 }
-aside {
+section {
     display: flex;
     margin-left: 20px;
     padding-left: 40px;
     clear: both;
     float: left;
+    flex-direction: column;
     width: 20%;
     height: 100%;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #2589bd;
 }
-
-
- aside div {
-    margin-bottom: 32px;
-    color: #ffffff;
- }
-
-aside h3 {
-    padding: 30px;
-    margin-bottom: 10px;
-    text-align: left;
-} 
+figcaption {
+    background-color: black;
+    color: white;
+    font-style: italic;
+    padding: 2px;
+    text-align: center;
+    float: right;
+  }
 
 footer {
     padding: 30px;
@@ -95,3 +103,20 @@ footer {
 footer h4 {
     font-size: 20px;
 }
+/* When using `max-width` as the breakpoint, you must go from widest to narrowest to avoid conflict */
+
+/* Tablets - header changes color */
+@media screen and (max-width: 992px) {
+   
+  }
+  
+  /* Large smartphones - navbar changes color */
+  @media screen and (max-width: 768px) {
+ 
+  }
+  
+  /* Small smartphones - image placeholders change color */
+  @media screen and (max-width: 576px) {
+
+  }
+  

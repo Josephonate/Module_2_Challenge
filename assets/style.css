@@ -5,16 +5,20 @@
     
 }
 
-
 body{
-    background-image: url("brainscope_6.jpg");
+    background-image: url("/Images/brainscope_6.jpg");
+    background-color: #042a3f;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: center;
 }
 
 header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: blue;
+    background-color: #042a3f;
     color: white;
+    opacity: 80%;
 }
 h1 {
     display: inline-block;

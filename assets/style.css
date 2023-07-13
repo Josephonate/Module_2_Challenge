@@ -36,6 +36,7 @@ header nav {
     float: right;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 20px;
+    
 }
 
 ul {
@@ -47,54 +48,70 @@ ul li {
     margin-left: 25px;
 }
 
-a{
+header ul li a{
     color: white;
 }
-
+/* unvisited link */
+a:link {
+    color: red;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: green;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: hotpink;
+  }
+  
+  /* selected link */
+  a:active {
+    color: blue;
+  }
 section{
     padding: 20px;
-    margin: 50px;
-    width: 75%;
-    height: 33%;
+    margin: 20px;
+    width: 90%;
     float: right;
     text-align: left;
 }
 h2{
+    padding: 20px;
+    margin: 50px;
     float: left;
+    text-align: right;
 }
 p{
     font-size: 20px;
-    float: right;
+    padding: 20px;
+    float:right;
+    border-left: 5px solid black;
+    text-shadow: 10px 10px 10px black;
 }
 article{
     margin: 50px;
-    width: 75%;
-    height: 33%;
+    width: 90%;
     font-size: 25px;
-    color: white;
-    text-shadow: 10px 10px 10px black;
-    border-left: black;
     float: right;
 }
 
 article figure{
     padding: 25px;
     float: right;
+    border-left: 5px solid black;
 }
 
 h3{
+    padding: 20px;
     float: left;
-}
-.border{
-    border-right: 5px solid black;
-    margin-left: 70px;
-    padding: 30px;
-    
+    text-align: right;
 }
 
 footer {
     padding: 50px;
-    width: 75%;
+    width: 90%;
     clear: both;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 20px;
@@ -102,25 +119,19 @@ footer {
     float: right;
 }
 
-aside{
-    width: 25%;
-    height: 100%;
-    clear: both;
-    float: left;
-}
-aside div{
-    margin-bottom: 32px;
-}
+
 h4 {
-    float: left;
     padding-right: 100px;
-    ;
-    width: 10%;
+    width: 25%;
     display: inline-block;
     margin-left: 20px;
+    text-align: right;
 }
 footer ul{
-    float: center;
+    padding: 20px;
+    width: 75%;
+    float: right;
+    border-left: 5px solid black;
 }
 /* When using `max-width` as the breakpoint, you must go from widest to narrowest to avoid conflict */
 

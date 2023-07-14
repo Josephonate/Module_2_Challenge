@@ -54,11 +54,13 @@ section h2 {
     padding: 2%;
     border-right: 5px solid black;
     text-align: right;
+    font-size: 50px;
 }
 
 section p {
     width: 75%;
     padding: 5%;
+    font-size: 25px;
 }
 .articleContainerWork {
     display: flex;
@@ -71,6 +73,8 @@ h3 {
     padding: 2%;
     border-right: 5px solid black;
     text-align: right;
+    font-size: 50px;
+    padding-right: 50px;
 }
 
 .imageContainer {
@@ -85,7 +89,7 @@ h3 {
     left: 5%;
 }
 
-article a {
+.article a {
     width: 75%;
     padding: 5%; 
 }
@@ -99,7 +103,7 @@ article a {
 }
 
 /* currently not doing anything */
-.smallerImageContainer img {
+.otherImageContainer img {
     height: 100%;
     width: 100%;
     object-fit: cover;
@@ -109,10 +113,32 @@ article a {
  /* background color and position are inherited from image container settings */
  /* this overwrites textbox location on the image so
   it's higher than the image container set height. */
-.smallerImageContainer  h2 {
+.otherImageContainer  p {
     top: 15%;
     left: 5%;
 } 
+
+h4 {
+
+    border-right: 5px solid black;
+    text-align: right;
+    font-size: 25px;
+    padding-right: 50px;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-evenly;
+    width: 75%;
+    padding: 5%;
+    /* margin: 75%; */
+
+}
+li {
+    font-size: 30px;
+}
 
 /* Tablets - header changes color */
 @media screen and (max-width: 992px) {

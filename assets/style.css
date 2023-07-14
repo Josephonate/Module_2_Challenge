@@ -6,14 +6,14 @@
 }
 
 /* this code gives me a background for my webpage and how its positioned */
-/* body{
-    background-image: url("./Images/brainscope_6.jpg");
+body{
+    background-image: url("/Images/brainscope_6.jpg");
     background-color: #042a3f;
     background-repeat: no-repeat;
     background-size: 80%;
     background-position: center;
-    
-} */
+    background-attachment: fixed;
+}
 
 header {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -102,7 +102,6 @@ h3 {
     font-size: 100%;
 }
 
-/* currently not doing anything */
 .otherImageContainer img {
     height: 100%;
     width: 100%;
@@ -122,7 +121,7 @@ h4 {
 
     border-right: 5px solid black;
     text-align: right;
-    font-size: 25px;
+    font-size: 50px;
     padding-right: 50px;
 }
 

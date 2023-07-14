@@ -7,7 +7,7 @@
 
 /* this code gives me a background for my webpage and how its positioned */
 /* body{
-    background-image: url("/Images/brainscope_6.jpg");
+    background-image: url("./Images/brainscope_6.jpg");
     background-color: #042a3f;
     background-repeat: no-repeat;
     background-size: 80%;
@@ -16,124 +16,103 @@
 } */
 
 header {
-    padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #042a3f;
     color: white;
     opacity: 70%;
-}
-h1 {
-    
-    display: inline-block;
-    font-size: 48px;
-    
-}
-
-header nav {
+    display: flex;
+    /* Forces elements to the next line if they don't fit */
     flex-wrap: wrap;
-    padding-top: 15px;
-    margin-right: 20px;
-    float: right;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 20px;
-    
-}
+    justify-content: space-between;
+    padding: 60px;
+      }
 
-ul {
-    list-style-type: none;
+h1 {
+    font-size: 50px;
 }
-
-ul li {
-    display: inline-block;
-    margin-left: 25px;
-}
-
-header ul li a{
+nav a {
+    padding: 14px 20px;
+    text-align: center;
     color: white;
-}
-/* unvisited link */
-a:link {
-    color: red;
-  }
-  
-  /* visited link */
-  a:visited {
-    color: green;
-  }
-  
-  /* mouse over link */
-  a:hover {
-    color: hotpink;
-  }
-  
-  /* selected link */
-  a:active {
-    color: blue;
-  }
-section{
-    padding: 20px;
-    margin: 20px;
-    width: 90%;
-    float: right;
-    text-align: left;
-}
-h2{
-    padding: 20px;
-    margin: 50px;
-    float: left;
-    text-align: right;
-}
-p{
-    font-size: 20px;
-    padding: 20px;
-    float:right;
-    border-left: 5px solid black;
-    text-shadow: 10px 10px 10px black;
-}
-article{
-    margin: 50px;
-    width: 90%;
-    font-size: 25px;
-    float: right;
-}
+    font-size: 30px;
+      }
 
-article figure{
-    padding: 25px;
-    float: right;
-    border-left: 5px solid black;
-}
+section {
+    flex-wrap: wrap;
+    padding: 0px 0px 20px 0px;
+   }
 
-h3{
-    padding: 20px;
-    float: left;
+.sectionContainer {
+    display: flex;
+    padding:100px;
+    /* background-clip: content-box; */
+    }
+
+section h2 {
+    min-width: 20%;
+    margin: 5%;
+    padding: 2%;
+    border-right: 5px solid black;
     text-align: right;
 }
 
-footer {
-    padding: 50px;
-    width: 90%;
-    clear: both;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 20px;
-    text-align: left;
-    float: right;
-}
-
-
-h4 {
-    padding-right: 100px;
-    width: 25%;
-    display: inline-block;
-    margin-left: 20px;
-    text-align: right;
-}
-footer ul{
-    padding: 20px;
+section p {
     width: 75%;
-    float: right;
-    border-left: 5px solid black;
+    padding: 5%;
 }
-/* When using `max-width` as the breakpoint, you must go from widest to narrowest to avoid conflict */
+.articleContainerWork {
+    display: flex;
+    border: 100px;
+}
+
+h3 {
+    min-width: 20%;
+    margin: 25%;
+    padding: 2%;
+    border-right: 5px solid black;
+    text-align: right;
+}
+
+.imageContainer {
+    /* centers text on top of absolute position image */
+    position: relative;
+    font-size: 110%;
+}
+
+.article p {
+    position: absolute;
+    top: 45%;
+    left: 5%;
+}
+
+article a {
+    width: 75%;
+    padding: 5%; 
+}
+
+.otherImageContainer {
+    /* sets flex to make boxes fit side to side. */
+    display: flex;
+    /* currently not doing anything */
+    position: relative;
+    font-size: 100%;
+}
+
+/* currently not doing anything */
+.smallerImageContainer img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    justify-content: space-between;
+}
+
+ /* background color and position are inherited from image container settings */
+ /* this overwrites textbox location on the image so
+  it's higher than the image container set height. */
+.smallerImageContainer  h2 {
+    top: 15%;
+    left: 5%;
+} 
 
 /* Tablets - header changes color */
 @media screen and (max-width: 992px) {

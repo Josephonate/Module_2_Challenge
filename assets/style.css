@@ -13,6 +13,7 @@ body{
     background-size: 80%;
     background-position: center;
     background-attachment: fixed;
+    text-shadow: 2px 2px black;
 }
 
 header {
@@ -28,6 +29,7 @@ header {
 
 h1 {
     font-size: 50px;
+    color: white;
 }
 nav a {
     padding: 14px 20px;
@@ -51,6 +53,7 @@ nav a {
     text-align: right;
     float: left;
     padding: 20px 80px 20px 20px;
+    color: white;
  }
 
  section p {
@@ -63,24 +66,33 @@ nav a {
     text-align: left;
     font-size: 20px;
     float: right;
+    color: white;
+    text-shadow: 2px 2px black;
     background-color: rgb(4, 42, 63, 80%);
 
  }
 
  .workImg {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     align-content: space-evenly;
     width: 75%;
     margin: auto;
 
  }
+ img {
+    width: 500px;
+    height: 500px;
+ }
+
 
  h3 {
     font-size: 50px;
     border-right: 5px solid black;
     float: left;
     padding-right: 50px;
+    color: white;
  }
 
  .contacts {
@@ -98,6 +110,7 @@ nav a {
     border-right: 5px solid black;
     float: left;
     padding-right: 50px;
+    color: white;
  }
 
  ul {
@@ -109,6 +122,11 @@ nav a {
     flex-grow: 1;
     font-size: 30px;
  }
+
+li {
+    color: white;
+    text-shadow: 2px 2px black;
+}
 
 /* Tablets - header changes color */
 @media screen and (max-width: 992px) {

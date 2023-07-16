@@ -7,8 +7,9 @@
 
 /* this code gives me a background for my webpage and how its positioned */
 body{
-    background-image: url("/Images/brainscope_6.jpg");
+
     background-color: #042a3f;
+    background-image: url("/Images/brainscope_6.jpg");
     background-repeat: no-repeat;
     background-size: 80%;
     background-position: center;
@@ -25,7 +26,11 @@ header {
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 60px;
-      }
+}
+
+div {
+    display: flex;
+}
 
 h1 {
     font-size: 50px;
@@ -44,6 +49,7 @@ nav a {
     align-content: space-evenly;
     width: 75%;
     margin: auto;
+    border: 2px solid black;
 
  }
 
@@ -54,13 +60,14 @@ nav a {
     float: left;
     padding: 20px 80px 20px 20px;
     color: white;
+    text-shadow: 2px 2px black;
+    
  }
 
- section p {
+.paragraph {
     display: flex;
     justify-content: space-between;
     justify-content: center;
-    align-items: ;
     width: 75%;
     padding: 20px;
     text-align: left;
@@ -77,22 +84,44 @@ nav a {
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-content: space-evenly;
-    width: 75%;
     margin: auto;
+    border: 2px solid green;
+    flex-shrink: 1;
 
  }
+ .container {
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid green;
+    /* max-width: 100%; */
+    /* width: 100%; */
+    
+
+ }
+ 
  img {
-    width: 500px;
-    height: 500px;
- }
+    max-width: 100%;
+    width: 400px;
+    height: 200px;
+    /* object-fit: cover; */
+}
 
+div a :hover {
+    cursor: pointer;
+    opacity: 80%;
+}
 
+h5 {
+text-align: left;
+font-size: 20px;
+}
  h3 {
     font-size: 50px;
     border-right: 5px solid black;
     float: left;
     padding-right: 50px;
     color: white;
+    text-shadow: 2px 2px black;
  }
 
  .contacts {
@@ -111,6 +140,7 @@ nav a {
     float: left;
     padding-right: 50px;
     color: white;
+    text-shadow: 2px 2px black;
  }
 
  ul {
@@ -119,27 +149,39 @@ nav a {
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-content: space-evenly;
-    flex-grow: 1;
+    flex-grow: 2;
     font-size: 30px;
  }
 
 li {
     color: white;
     text-shadow: 2px 2px black;
+    border: 2px solid white;
 }
 
 /* Tablets - header changes color */
 @media screen and (max-width: 992px) {
-   
+    body,
+    nav {
+      flex-direction: column;
+    }
   }
   
   /* Large smartphones - navbar changes color */
   @media screen and (max-width: 768px) {
+    body,
+    nav {
+      flex-direction: column;
+    }
  
   }
   
   /* Small smartphones - image placeholders change color */
   @media screen and (max-width: 576px) {
+    body,
+    nav {
+      flex-direction: column;
+    }
 
   }
   

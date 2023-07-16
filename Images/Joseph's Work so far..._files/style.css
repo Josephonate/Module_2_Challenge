@@ -1,0 +1,145 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    
+}
+
+/* this code gives me a background for my webpage and how its positioned */
+body{
+    background-image: url("/Images/brainscope_6.jpg");
+    background-color: #042a3f;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: center;
+    background-attachment: fixed;
+    text-shadow: 2px 2px black;
+}
+
+header {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: rgb(4, 42, 63, 70%);
+    color: white;
+    display: flex;
+    /* Forces elements to the next line if they don't fit */
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 60px;
+      }
+
+h1 {
+    font-size: 50px;
+    color: white;
+}
+nav a {
+    padding: 14px 20px;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+ }
+
+ section {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    width: 75%;
+    margin: auto;
+
+ }
+
+ h2 {
+    font-size: 50px;
+    border-right: 5px solid black;
+    text-align: right;
+    float: left;
+    padding: 20px 80px 20px 20px;
+    color: white;
+ }
+
+ section p {
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+    align-items: ;
+    width: 75%;
+    padding: 20px;
+    text-align: left;
+    font-size: 20px;
+    float: right;
+    color: white;
+    text-shadow: 2px 2px black;
+    background-color: rgb(4, 42, 63, 80%);
+
+ }
+
+ .workImg {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    width: 75%;
+    margin: auto;
+
+ }
+ img {
+    width: 500px;
+    height: 500px;
+ }
+
+
+ h3 {
+    font-size: 50px;
+    border-right: 5px solid black;
+    float: left;
+    padding-right: 50px;
+    color: white;
+ }
+
+ .contacts {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    flex-wrap: wrap;
+    text-align: right;
+    margin: auto;
+    width: 75%;
+ }
+
+ h4 {
+    font-size: 50px;
+    border-right: 5px solid black;
+    float: left;
+    padding-right: 50px;
+    color: white;
+ }
+
+ ul {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    flex-grow: 1;
+    font-size: 30px;
+ }
+
+li {
+    color: white;
+    text-shadow: 2px 2px black;
+}
+
+/* Tablets - header changes color */
+@media screen and (max-width: 992px) {
+   
+  }
+  
+  /* Large smartphones - navbar changes color */
+  @media screen and (max-width: 768px) {
+ 
+  }
+  
+  /* Small smartphones - image placeholders change color */
+  @media screen and (max-width: 576px) {
+
+  }
+  
